@@ -13,9 +13,18 @@ public class Main {
         System.out.print("Please, input distance in miles: ");
         double mls = scanner.nextDouble();
         System.out.println("The distance " + mls + " miles in kilometers will be " + convMlsToKms(mls));
+
+        System.out.print("Please, input distance in kilometers: ");
+        double kms = scanner.nextDouble();
+        System.out.println("The distance " + kms + " kilometers in miles will be " + convKmsToMls(kms));
     }
 
     private static double convMlsToKms(double mls) {
         return mls * difKmToMl;
     }
+
+    private static double convKmsToMls(double kms) {
+        return kms / difKmToMl;
+    }
+
 }
